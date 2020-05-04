@@ -7,7 +7,6 @@ function Home() {
     const [movies, setMovies] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-    const [mainImage, setMainImage] = useState(null);
 
     const endpoint = `${API_URL}/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
 
@@ -20,7 +19,6 @@ function Home() {
                 setMainImage(null);
                 const response = await axios.get(endpoint);
                 setMovies(response.data.results);
-                setMainImage(response.data.results[0]);
             }catch(e) {
                 setError(e);
             }
@@ -32,7 +30,6 @@ function Home() {
     if (loading) return <div>로딩중..</div>
     if (error) return <div>에러</div>
     if (!movies) return null;
-    if (!mainImage) return null;
 
     return (
         <div className="home">

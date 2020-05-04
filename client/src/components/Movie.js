@@ -1,17 +1,12 @@
 import React from 'react';
-import PropType from 'prop-types';
-import './Movie.css';
 import { API_URL, API_KEY, IMAGE_BASE_URL } from './config';
-function Movie({id, title, image}) {
+
+const Movie = (props) => {
     return (
-        <img src={`${IMAGE_BASE_URL}w185/${image}`} alt={title} title={title}/>
+        <div className="movie">
+            <img src={`${IMAGE_BASE_URL}original/${props.props.backdrop_path}`} alt={props.props.original_title}/>
+        </div>
     );
 }
-
-Movie.propTypes = {
-    id: PropType.number.isRequired,
-    title: PropType.string.isRequired,
-    image: PropType.string.isRequired,
-};
 
 export default Movie;
