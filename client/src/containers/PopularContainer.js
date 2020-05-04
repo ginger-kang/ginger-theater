@@ -10,7 +10,7 @@ const PopularContainer = (props) => {
         dispatch(getPopular());
     }, []);
 
-    const popularData = useSelector(state => state.action.movies, []) || [];
+    const popularData = useSelector(state => state.popular.movies, []) || [];
 
     return (
         <div>

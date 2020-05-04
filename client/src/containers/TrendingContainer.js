@@ -10,7 +10,7 @@ const TrendingContainer = (props) => {
         dispatch(getTrending());
     }, []);
 
-    const trendingData = useSelector(state => state.action.movies, []) || [];
+    const trendingData = useSelector(state => state.trending.movies, []) || [];
 
     return (
         <div>
