@@ -14,7 +14,7 @@ const TopRatedContainer = (props) => {
 
     return (
         <div className="movie__view">
-            <h3>평점</h3>
+            <h3>평점높은 컨텐츠</h3>
             <div className="movieContainer">
                 { topRatedData.results && topRatedData.results.map(movie => (
                     <Movie props={movie} key={movie.id}/>

@@ -14,7 +14,7 @@ const TrendingContainer = (props) => {
 
     return (
         <div className="movie__view">
-            <h3>트렌드</h3>
+            <h3>현재 많이 보는 컨텐츠</h3>
             <div className="movieContainer">
                 { trendingData.results && trendingData.results.map(movie => (
                     <Movie props={movie} key={movie.id}/>

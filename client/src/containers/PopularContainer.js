@@ -15,7 +15,7 @@ const PopularContainer = (props) => {
 
     return (
         <div className="movie__view">
-            <h3>인기</h3>
+            <h3>인기있는 컨텐츠</h3>
             <div className="movieContainer">
                 { popularData.results && popularData.results.map(movie => (
                     <Movie props={movie} key={movie.id}/>
