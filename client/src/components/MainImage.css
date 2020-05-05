@@ -1,0 +1,22 @@
+.mainImageContainer {
+    width: 100%;
+    height: 35rem;
+    margin: 0;
+}
+
+.mainContext {
+    position: absolute;
+    width: 30rem;
+    color: white;
+    text-overflow: ellipsis;
+    left: 3rem;
+    bottom: 2.5rem;
+}
+
+.mainContext h1 {
+    font-size: 5rem;
+}
+
+.mainContext p{
+    max-height: 10rem;
+}

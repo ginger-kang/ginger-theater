@@ -11,11 +11,10 @@ const ActionContainer = (props) => {
     }, []);
 
     const actionData = useSelector(state => state.action.movies, []) || [];
-    console.log(actionData);
 
     return (
-        <div>
-            <h4>Action</h4>
+        <div className="movie__view">
+            <h3>액션</h3>
             <div className="movieContainer">
                 { actionData.results && actionData.results.map(movie => (
                     <Movie props={movie} key={movie.id}/>

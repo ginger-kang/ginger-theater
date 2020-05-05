@@ -1,4 +1,24 @@
 .movieContainer {
     display: flex;
     flex-direction: row;
+    overflow: auto;
+    align-content: space-between;
+    margin-top: .8rem;
+}
+
+.layout {
+    margin: 2rem 4rem;
+    color: white;
+}
+
+.movie__view {
+    margin-top: 1.7rem;
+}
+
+.movie__view h3 {
+    padding-left: .5rem;
+}
+
+.movie {
+    margin: .3rem;
 }

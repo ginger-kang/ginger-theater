@@ -1,23 +1,22 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getPopular } from '../store/actions/index';
+import { getTopRated } from '../store/actions/index';
 import Movie from '../components/Movie';
 
-const PopularContainer = (props) => {
+const TopRatedContainer = (props) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getPopular());
+        dispatch(getTopRated());
     }, []);
 
-    const popularData = useSelector(state => state.popular.movies, []) || [];
-    //console.log(popularData.results)
+    const topRatedData = useSelector(state => state.topRated.movies, []) || [];
 
     return (
         <div className="movie__view">
-            <h3>인기</h3>
+            <h3>평점</h3>
             <div className="movieContainer">
-                { popularData.results && popularData.results.map(movie => (
+                { topRatedData.results && topRatedData.results.map(movie => (
                     <Movie props={movie} key={movie.id}/>
                 ))}
             </div>
@@ -25,4 +24,4 @@ const PopularContainer = (props) => {
     );    
 }
 
-export default PopularContainer;
+export default TopRatedContainer;

@@ -13,8 +13,8 @@ const TrendingContainer = (props) => {
     const trendingData = useSelector(state => state.trending.movies, []) || [];
 
     return (
-        <div>
-            <h4>Trend</h4>
+        <div className="movie__view">
+            <h3>트렌드</h3>
             <div className="movieContainer">
                 { trendingData.results && trendingData.results.map(movie => (
                     <Movie props={movie} key={movie.id}/>

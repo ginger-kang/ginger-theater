@@ -1,23 +1,23 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getPopular } from '../store/actions/index';
+import { getNetflix } from '../store/actions/index';
 import Movie from '../components/Movie';
 
-const PopularContainer = (props) => {
+const NetflixContainer = (props) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getPopular());
+        dispatch(getNetflix());
     }, []);
 
-    const popularData = useSelector(state => state.popular.movies, []) || [];
-    //console.log(popularData.results)
+    const netflixData = useSelector(state => state.netflix.movies, []) || [];
+    //console.log(netflixData.results);
 
     return (
         <div className="movie__view">
-            <h3>인기</h3>
+            <h3>NETFLIX ORIGINAL</h3>
             <div className="movieContainer">
-                { popularData.results && popularData.results.map(movie => (
+                { netflixData.results && netflixData.results.map(movie => (
                     <Movie props={movie} key={movie.id}/>
                 ))}
             </div>
@@ -25,4 +25,4 @@ const PopularContainer = (props) => {
     );    
 }
 
-export default PopularContainer;
+export default NetflixContainer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Movie.css';
-import { API_URL, API_KEY, IMAGE_BASE_URL } from './config';
+import { IMAGE_BASE_URL } from './config';
 
 const Movie = (props) => {
     return (
