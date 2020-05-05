@@ -6,6 +6,24 @@
     margin-top: .8rem;
 }
 
+.movieContainer::-webkit-scrollbar {
+    width: 1rem;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.movieContainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.scrollbar-danger::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(241, 240, 240);
+    border-radius: 10px; 
+}
+
 .layout {
     margin: 2rem 4rem;
     color: white;
@@ -16,6 +34,7 @@
 }
 
 .movie__view h3 {
+    font-size: 1.3rem;
     padding-left: .5rem;
 }
 

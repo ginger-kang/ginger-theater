@@ -1,6 +1,6 @@
 .mainImageContainer {
     width: 100%;
-    height: 35rem;
+    height: 40rem;
     margin: 0;
 }
 
@@ -14,9 +14,11 @@
 }
 
 .mainContext h1 {
-    font-size: 5rem;
+    font-size: 5.3rem;
 }
 
 .mainContext p{
-    max-height: 10rem;
+    width: 30rem;
+    height: 13rem;
+    font-size: 1.1rem;
 }
