@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     overflow: auto;
-    align-content: space-between;
     margin-top: .8rem;
 }
 
