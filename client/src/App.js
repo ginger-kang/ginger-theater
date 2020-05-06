@@ -5,6 +5,7 @@ import MainImageContainer from './containers/MainImageContainer';
 import Navigation from './components/Navigation';
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Navigation />

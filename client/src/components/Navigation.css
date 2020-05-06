@@ -59,3 +59,31 @@
     color: white;
     margin: 0 1.5rem;
 }
+
+.navIcon {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.inputBox {
+    width: 4rem;
+    color: white;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userBox {
+    width: 4rem;
+    margin-right: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

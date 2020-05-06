@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './Navigation.css';
+import { AiOutlineUser, AiOutlineSearch} from "react-icons/ai"
 
 const Navigation = () => {
     const [scroll, setScroll] = useState(false);
 
-    const checkScroll = () => {
+    const handleScroll = () => {
         //console.log(window.scrollY);
         if(window.scrollY < 500) {
             setScroll(false);
@@ -14,7 +15,7 @@ const Navigation = () => {
         }
     }
     
-    window.addEventListener('scroll', checkScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return (
         <div className={"nav" + (scroll ? "black" : "")}>
@@ -24,6 +25,14 @@ const Navigation = () => {
             </Link>
             <Link to='/' className="home">HOME</Link>
             <Link to='/party' className="party">PARTY</Link>
+            <div className="navIcon"> 
+                <div className="inputBox">
+                    <a><AiOutlineSearch size={32}/></a>
+                </div>
+                <div className="userBox">
+                    <a><AiOutlineUser size={32}/></a>
+                </div>
+            </div>
         </div>
     ); 
 }
