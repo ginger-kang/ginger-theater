@@ -1,21 +1,9 @@
-.modalText {
+.modalContainer {
     position: fixed;
-    text-overflow: ellipsis;
-    width: 3rem;
-    height: 5rem;
-    left: 2rem;
-    bottom: 2rem;
-    opacity: 1;
-}
-
-.modalText h1 {
-    font-size: 4rem;
-}
-
-.modalText p {
-    font-size: 1.3rem;
-}
-
-.hideModal {
-    display: none;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .67);
+    width: 100vw;
+    height: 100vh;
+    z-index: 400;
 }

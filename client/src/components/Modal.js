@@ -1,11 +1,13 @@
 import React from 'react';
 import { IMAGE_BASE_URL } from './config';
+import './Modal.css'
 
 const Modal = ({title, image, content, show, handleClose}) => {
     const showHideModalContainer = show ? "showModal" : "hideModal";
 
     return (
         show ?
+        <div className="modalContainer">
             <div className={showHideModalContainer} onClick={handleClose} style={{
                 background: `url('${IMAGE_BASE_URL}original/${image}')`,
                 zIndex: '300',
@@ -19,7 +21,8 @@ const Modal = ({title, image, content, show, handleClose}) => {
                 left: '15%',
                 bottom: '3rem',
                 margin: '0 0rem',
-                opacity: '0.9' 
+                opacity: '.98',
+                boxShadow: 'inset 0 0 5px 2px #282a2d'
             }}>
                 <div className="modalText" style={{
                     position: 'absolute',
@@ -37,6 +40,7 @@ const Modal = ({title, image, content, show, handleClose}) => {
                     }}>{content}</p>
                 </div>
             </div>
+        </div>
         : null
     );
 }

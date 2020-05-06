@@ -8,6 +8,27 @@ export const GET_NETFLIX_MOVIES = 'GET_NETFLIX_MOVIES';
 export const GET_TOP_RATED_MOVIES = 'GET_TOP_RATED_MOVIES';
 export const GET_COMEDY_MOVIES = 'GET_COMEDY_MOVIES';
 export const GET_MAIN_IMAGE = 'GET_MAIN_IMAGE';
+export const GET_ANIMATION_MOVIES = 'GET_ANIMATION_MOVIES';
+
+
+export const getAnimationData = (data) => {
+    return {
+        type: GET_ANIMATION_MOVIES,
+        data
+    }
+}
+
+export const getAnimation = () => {
+    return (dispatch) => {
+        return axios.get(`${API_URL}/discover/movie?api_key=${API_KEY}&with_genres=16`)
+            .then (response => {
+                dispatch(getAnimationData(response.data))
+            })
+            .catch (e => {
+                throw(e)
+            })
+    }
+}
 
 export const getPopularData = (data) => {
     return {
@@ -79,25 +100,6 @@ export const getNetflix = () => {
         return axios.get(`${API_URL}/discover/tv?api_key=${API_KEY}&with_networks=213`)
             .then(response => {
                 dispatch(getNetflixData(response.data))
-            })
-            .catch(error => {
-                throw(error);
-            });
-    }
-}
-
-export const getTopRatedData = (data) => {
-    return {
-        type: GET_TOP_RATED_MOVIES,
-        data
-    }
-}
-
-export const getTopRated = () => {
-    return (dispatch) => {
-        return axios.get(`${API_URL}/movie/top_rated?api_key=${API_KEY}&language=en-US`)
-            .then(response => {
-                dispatch(getTopRatedData(response.data))
             })
             .catch(error => {
                 throw(error);

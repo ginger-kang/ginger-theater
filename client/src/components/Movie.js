@@ -21,7 +21,7 @@ const Movie = (props) => {
                 <img src={`${IMAGE_BASE_URL}w185/${props.props.poster_path}`} alt={props.props.original_title}/>
             </div>
             <Modal 
-                title = {props.props.original_title}
+                title = {props.props.title}
                 image = {props.props.poster_path}
                 content = {props.props.overview}
                 show = {modal}

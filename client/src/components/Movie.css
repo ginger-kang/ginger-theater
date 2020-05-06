@@ -24,12 +24,11 @@
 }
 
 .layout {
-    margin: 2rem 4rem;
     color: white;
 }
 
 .movie__view {
-    margin-top: 1.7rem;
+    margin: 1.7rem 4rem;
 }
 
 .movie__view h3 {

@@ -4,8 +4,8 @@ import trendingReducer from './trendingReducer';
 import actionReducer from './actionReducer';
 import netflixReducer from './netflixReducer';
 import comedyReducer from './comedyReducer';
-import topRatedReducer from './topRatedReducer';
 import mainImageReducer from './mainImageReducer';
+import animationReducer from './animationReducer';
 
 
 const rootReducer = combineReducers({
@@ -14,8 +14,8 @@ const rootReducer = combineReducers({
     action: actionReducer,
     netflix: netflixReducer,
     comedy: comedyReducer,
-    topRated: topRatedReducer,
-    mainImage: mainImageReducer
+    mainImage: mainImageReducer,
+    animation: animationReducer
 });
 
 export default rootReducer;

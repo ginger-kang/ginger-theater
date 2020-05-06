@@ -12,12 +12,12 @@ const MainImageContainer = () => {
     }, []);
 
     const mainImageData = useSelector(state => state.mainImage.movies, []) || [];
-    console.log(mainImageData.results);
+    //console.log(mainImageData.results);
 
     return (
         <div className="mainImageContainer">
             { mainImageData.results && 
-            <MainImage props={mainImageData.results[0]} image={`${IMAGE_BASE_URL}w1280/${mainImageData.results[0].backdrop_path}`}/>}
+            <MainImage props={mainImageData.results[0]} image={`${IMAGE_BASE_URL}original/${mainImageData.results[0].backdrop_path}`}/>}
         </div>
     );    
 }
