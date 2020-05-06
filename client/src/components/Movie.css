@@ -19,7 +19,7 @@
 
 .scrollbar-danger::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: rgb(241, 240, 240);
+    background-color: black;
     border-radius: 10px; 
 }
 
