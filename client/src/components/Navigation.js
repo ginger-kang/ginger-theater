@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './Navigation.css';
-import { AiOutlineUser, AiOutlineSearch} from "react-icons/ai"
+import { AiOutlineUser, AiOutlineSearch} from "react-icons/ai";
+import SearchMovie from '../containers/SearchMovie';
 
 const Navigation = () => {
     const [scroll, setScroll] = useState(false);
@@ -27,7 +28,7 @@ const Navigation = () => {
             <Link to='/party' className="party">PARTY</Link>
             <div className="navIcon"> 
                 <div className="inputBox">
-                    <a><AiOutlineSearch size={32}/></a>
+                    <SearchMovie />
                 </div>
                 <div className="userBox">
                     <a><AiOutlineUser size={32}/></a>

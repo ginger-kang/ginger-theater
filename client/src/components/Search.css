@@ -1,0 +1,11 @@
+.searchContainer {
+    position: fixed;
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10% 10%;
+    top: 0;
+    left: 0;
+}

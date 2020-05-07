@@ -69,17 +69,38 @@
 }
 
 .inputBox {
-    width: 4rem;
+    width: 40rem;
     color: white;
     margin-right: 2rem;
+}
+
+.inputContainer {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    cursor: pointer;
+    flex-direction: row;
+}
+
+.inputText {
+    width: 21rem;
+    background: none;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-size: 1.3rem;
+    height: 2.5rem;
+}
+
+.inputLogo {
+    width: 4rem;
+    height: 100%;
 }
 
 .userBox {
     width: 4rem;
+    height: 100%;
     margin-right: 3rem;
     color: white;
     display: flex;
@@ -87,3 +108,5 @@
     align-items: center;
     cursor: pointer;
 }
+
+
