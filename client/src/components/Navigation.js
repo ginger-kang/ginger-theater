@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './Navigation.css';
 import { AiOutlineUser, AiOutlineSearch} from "react-icons/ai";
+import Home from '../containers/Home';
 import SearchMovie from '../containers/SearchMovie';
 
 const Navigation = () => {
@@ -24,16 +25,12 @@ const Navigation = () => {
                 <span className="net">NET</span>
                 <span className="cha">CHA</span>
             </Link>
-            <Link to='/' className="home">HOME</Link>
+            <Link to='/' className="movies" >MOVIES</Link>
             <Link to='/party' className="party">PARTY</Link>
-            <div className="navIcon"> 
-                <div className="inputBox">
-                    <SearchMovie />
-                </div>
-                <div className="userBox">
-                    <a><AiOutlineUser size={32}/></a>
-                </div>
+            <div>
+                <AiOutlineSearch size={32}/>
             </div>
+            <Link to='/login' className='login loginBox'><AiOutlineUser size={32}/></Link>
         </div>
     ); 
 }

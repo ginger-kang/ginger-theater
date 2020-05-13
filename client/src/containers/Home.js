@@ -6,10 +6,12 @@ import NetflixContainer from './NetflixContainer';
 import ComedyContainer from './ComedyContainer';
 import AnimationContainer from './AnimationContainer';
 import MainImageContainer from './MainImageContainer';
+import Navigation from '../components/Navigation';
 
 const HomeContainer = () =>{
     return (
         <div className="layout">
+            <Navigation />
             <MainImageContainer />
             <PopularContainer />
             <NetflixContainer />
