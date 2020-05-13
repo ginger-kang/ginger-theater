@@ -22,7 +22,7 @@ const Modal = ({title, image, content, show, handleClose}) => {
                 bottom: '3rem',
                 margin: '0 0rem',
                 opacity: '.98',
-                boxShadow: 'inset 0 0 3px 2px #282a2d'
+                boxShadow: 'inset 0 0 5px 2px #282a2d'
             }}>
                 <div className="modalText" style={{
                     position: 'absolute',

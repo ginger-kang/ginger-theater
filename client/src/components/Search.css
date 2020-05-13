@@ -1,11 +1,60 @@
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.inputContainer {
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    border-radius: 10px;
+    background-color: rgb(85, 83, 83);
+    position: absolute;
+    top: 8rem;
+}
+
+.inputForm {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    left: 4rem;
+}
+
+.inputText {
+    width: 100%;
+    background-color: rgb(85, 83, 83);
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+    font-size: 1.4rem;
+    color: white;
+    padding-left: .7rem;
+    outline: none;
+}
+
+.inputIcon {
+    color: white;
+    position: absolute;
+    left: 1rem;
+}
+
 .searchContainer {
-    position: fixed;
-    width: 60vw;
-    height: 60vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10% 10%;
-    top: 0;
-    left: 0;
+    width: 95%;
+    margin-top: 5rem;
+    position: absolute;
+    top: 12rem;
+}
+
+.searchMovie {
+    margin: .2rem;
+    cursor: pointer;
 }

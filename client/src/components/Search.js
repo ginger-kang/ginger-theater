@@ -3,7 +3,7 @@ import Modal from './Modal';
 import { IMAGE_BASE_URL } from '../components/config';
 import './Search.css';
 
-const Search = (props) => {
+const Search = (props, image) => {
     const [ modal, setModal ] = useState(false);
 
     const showModal = () => {
@@ -15,6 +15,7 @@ const Search = (props) => {
     };
 
     return (
+        image ?
         <>
             <div className="searchMovie" onClick={() => showModal()}>
                 <img src={`${IMAGE_BASE_URL}w185/${props.props.poster_path}`} alt={props.props.original_title}/>
@@ -27,6 +28,7 @@ const Search = (props) => {
                 handleClose = {() => hideModal()}
             />
         </>
+        : null
     );
 }
 

@@ -13,7 +13,7 @@ const SearchMovie = (props) => {
         const searchData = response.data.results || [];
         //console.log(searchResults);
         setSearchResults(searchData);
-        //console.log(searchData)
+        console.log(searchData)
     }
 
     const handleChange = (e) => {
@@ -27,23 +27,19 @@ const SearchMovie = (props) => {
     }
     
     return (
-        <>
+        <div className='search'>
             <div className='inputContainer'>
-                <div className='inputSearch'>
-                    <form className="inputForm" onSubmit={handleSubmit}>
-                        <input className='inputText' type='text' placeholde='Search Movie...' value={inputValue || ''} onChange={handleChange}/>
-                    </form>
-                </div>
-                <div className='inputLogo'>
-                    <a><AiOutlineSearch size={32}/></a>
-                </div>
+                <span className='inputIcon'><AiOutlineSearch size={40}/></span>
+                <form className="inputForm" onSubmit={handleSubmit}>
+                    <input className='inputText' type='text' placeholder='Search Movie...' value={inputValue || ''} onChange={handleChange}/>
+                </form>
             </div>
             <div className='searchContainer'>
                 {searchResults && searchResults.map(movie => (
-                    <Search props={movie} key={movie.id}/>
+                    <Search props={movie} image={movie.poster_path} key={movie.id}/>
                 ))}
             </div>
-        </>
+        </div>
     );
 }
 
