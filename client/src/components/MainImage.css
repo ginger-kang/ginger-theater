@@ -1,7 +1,16 @@
 .mainImageContainer {
     width: 100%;
-    height: 40rem;
+    height: 35rem;
     margin: 0;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .mainContext {
@@ -9,16 +18,41 @@
     width: 30rem;
     color: white;
     text-overflow: ellipsis;
-    left: 3rem;
-    bottom: 2.5rem;
+    left: 15rem;
+    bottom: 3rem;
 }
 
 .mainContext h1 {
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .mainContext p{
-    width: 30rem;
-    height: 13rem;
-    font-size: 1.1rem;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+button {
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+
+.leftButton {
+    position: absolute;
+    left: 3rem;
+    bottom: 50%;
+}
+
+.rightButton {
+    position: absolute;
+    right: 3rem;
+    bottom: 50%;
 }

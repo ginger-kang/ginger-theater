@@ -25,12 +25,13 @@ const Modal = ({title, image, content, show, handleClose}) => {
                 boxShadow: 'inset 0 0 5px 2px #282a2d'
             }}>
                 <div className="modalText" style={{
+                    color: 'white',
                     position: 'absolute',
                     left: '3rem',
                     bottom: '11rem',
                     width: 'auto',
                     height: '3rem',
-                    textOverflow: 'ellipsis'
+                    textOverflow: 'ellipsis',
                 }}>
                     <h1 style={{
                         fontSize: '3rem'

@@ -17,7 +17,11 @@ const MainImageContainer = () => {
     return (
         <div className="mainImageContainer">
             { mainImageData.results && 
-            <MainImage props={mainImageData.results[0]} image={`${IMAGE_BASE_URL}original/${mainImageData.results[0].backdrop_path}`}/>}
+            <MainImage 
+                props={mainImageData.results} 
+                // image={`${IMAGE_BASE_URL}original/
+                // ${mainImageData.results[0].backdrop_path}`}
+            />}
         </div>
     );    
 }

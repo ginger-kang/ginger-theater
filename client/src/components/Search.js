@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from './Modal';
 import { IMAGE_BASE_URL } from '../components/config';
 import './Search.css';
+import './Modal.css'
 
 const Search = (props, image) => {
     const [ modal, setModal ] = useState(false);

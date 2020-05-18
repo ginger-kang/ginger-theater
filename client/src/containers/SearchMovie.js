@@ -13,7 +13,7 @@ const SearchMovie = (props) => {
         const searchData = response.data.results || [];
         //console.log(searchResults);
         setSearchResults(searchData);
-        console.log(searchData)
+        //console.log(searchData[0].poster_path)
     }
 
     const handleChange = (e) => {
