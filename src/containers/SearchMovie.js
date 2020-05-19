@@ -7,6 +7,7 @@ import Search from '../components/Search';
 const SearchMovie = (props) => {
     const [inputValue, setInputValue] = useState('');
     const [searchResults, setSearchResults] = useState([]);
+    //const [ isImage, setisImage ] = useState(null);
 
     const getSearchMovies = async () => {
         const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&sort_by=popularity&language=en-US&query=${inputValue}&include_adult=false`);
@@ -36,7 +37,7 @@ const SearchMovie = (props) => {
             </div>
             <div className='searchContainer'>
                 {searchResults && searchResults.map(movie => (
-                    <Search props={movie} key={movie.id}/>
+                    <Search props={movie} image={movie.poster_path} key={movie.id}/>
                 ))}
             </div>
         </div>

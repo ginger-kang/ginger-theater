@@ -45,14 +45,30 @@
 }
 
 .searchContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 95%;
+    width: auto;
     margin-top: 5rem;
     position: absolute;
     top: 12rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+@media screen and (max-width: 1500px) { 
+    .searchContainer { 
+        grid-template-columns: repeat(6, 1fr);
+    } 
+}
+
+@media screen and (max-width: 1140px) { 
+    .searchContainer { 
+        grid-template-columns: repeat(4, 1fr);
+    } 
+}
+
+@media screen and (max-width: 760px) { 
+    .searchContainer { 
+        grid-template-columns: repeat(2, 1fr);
+    } 
 }
 
 .searchMovie {

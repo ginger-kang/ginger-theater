@@ -4,17 +4,11 @@ import { IMAGE_BASE_URL } from '../components/config';
 import './Search.css';
 import './Modal.css'
 
-const Search = (props) => {
+const Search = (props, image) => {
     const [ modal, setModal ] = useState(false);
-    const [ isImage, setisImage ] = useState(null);
-
-    const imageExist = () => {
-        console.log(props);
-    }
 
     const showModal = () => {
         setModal( true );
-        imageExist();
     };
     
     const hideModal = () => {
@@ -22,6 +16,7 @@ const Search = (props) => {
     };
 
     return (
+        image ?
         <>
             <div className="searchMovie" onClick={() => showModal()}>
                 <img src={`${IMAGE_BASE_URL}w185/${props.props.poster_path}`} alt={props.props.original_title}/>
@@ -34,6 +29,7 @@ const Search = (props) => {
                 handleClose = {() => hideModal()}
             />
         </>
+        : null
     );
 }
 
