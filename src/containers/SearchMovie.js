@@ -36,7 +36,7 @@ const SearchMovie = (props) => {
             </div>
             <div className='searchContainer'>
                 {searchResults && searchResults.map(movie => (
-                    <Search props={movie} image={movie.poster_path} key={movie.id}/>
+                    <Search props={movie} key={movie.id}/>
                 ))}
             </div>
         </div>
