@@ -8,7 +8,7 @@ const MainImage = ({props}) => {
 
     const imageLeftSliding = () => {
         if ( imageIndex === 0) {
-            setImageindex(2);
+            setImageindex(4);
         }else {
             setImageindex( imageIndex - 1 );
         }
@@ -16,7 +16,7 @@ const MainImage = ({props}) => {
     }
 
     const imageRightSliding = () => {
-        if ( imageIndex === 2) {
+        if ( imageIndex === 4) {
             setImageindex(0);
         }else {
             setImageindex( imageIndex + 1 );
