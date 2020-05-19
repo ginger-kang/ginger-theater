@@ -25,16 +25,23 @@ const MainImage = ({props}) => {
     }
 
     return (
-        <div style = {{
-            background: `url('${IMAGE_BASE_URL}original${props[imageIndex].poster_path}')`
-        }} className="mainImage">
+        <>
+            <div style = {{
+                background: `url('${IMAGE_BASE_URL}original${props[imageIndex].poster_path}')`,
+                width: '100%',
+                height: '100vh',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center, center',
+                backgroundRepeat: 'no-repeat'
+            }} className="mainImage">
+            </div>
             <button className="leftButton" onClick={imageLeftSliding}><AiOutlineLeft size={40}/></button>
             <button className="rightButton" onClick={imageRightSliding}><AiOutlineRight size={40}/></button>
             <div className="mainContext">
                 <h1>{props[imageIndex].original_title}</h1>
                 <p>{props[imageIndex].overview}</p>
             </div>
-        </div>
+        </>
     );
 }
 

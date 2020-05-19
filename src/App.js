@@ -24,8 +24,8 @@ function App() {
     <>
       <div className={"nav" + (scroll ? "black" : "")}>
           <Link to='/' className="netcha">
-              <span className="net">NET</span>
-              <span className="cha">CHA</span>
+              <span className="ginger">GINGER</span>
+              <span className="ginger-movie">MOVIE</span>
           </Link>
           <Link to='/' className="home">HOME</Link>
           <Link to='/party' className="party">PARTY</Link>
