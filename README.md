@@ -1,3 +1,3 @@
-#netcha
+# netcha
 
- -React Search Movie App
+- Movie Search App

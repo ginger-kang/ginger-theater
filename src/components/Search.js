@@ -16,7 +16,7 @@ const Search = (props, image) => {
     };
 
     return (
-        image ?
+        {image} ?
         <>
             <div className="searchMovie" onClick={() => showModal()}>
                 <img src={`${IMAGE_BASE_URL}w185/${props.props.poster_path}`} alt={props.props.original_title}/>
