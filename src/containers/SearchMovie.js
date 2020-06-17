@@ -16,7 +16,7 @@ const SearchMovie = (props) => {
     const searchData = response.data.results || [];
     //console.log(searchResults);
     setSearchResults(searchData);
-    //console.log(searchData[0].poster_path)
+    //console.log(searchData);
   };
 
   const handleChange = (e) => {
@@ -48,7 +48,7 @@ const SearchMovie = (props) => {
       <div className="searchContainer">
         {searchResults &&
           searchResults.map((movie) => (
-            <Search props={movie} image={movie.backdrop_path} key={movie.id} />
+            <Search props={movie} image={movie.poster_path} key={movie.id} />
           ))}
       </div>
     </div>
