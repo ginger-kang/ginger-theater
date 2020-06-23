@@ -1,8 +1,8 @@
 .mainImageContainer {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
 /* .mainImage {
@@ -14,45 +14,43 @@
 } */
 
 .mainContext {
-    position: absolute;
-    width: 30rem;
-    color: white;
-    text-overflow: ellipsis;
-    left: 15rem;
-    bottom: 3rem;
+  position: absolute;
+  width: 35rem;
+  color: white;
+  text-overflow: ellipsis;
+  left: 10rem;
+  bottom: 3rem;
 }
 
 .mainContext h1 {
-    font-size: 6rem;
+  font-size: 4rem;
 }
 
-.mainContext p{
-    width: 100%;
-    height: 4rem;
-    font-size: 1.4rem;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.mainContext p {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 button {
-    background: none;
-    color: white;
-    cursor: pointer;
-    border: none;
-    outline: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-
-
 .leftButton {
-    position: absolute;
-    left: 3rem;
-    bottom: 50%;
+  position: absolute;
+  left: 3rem;
+  bottom: 50%;
 }
 
 .rightButton {
-    position: absolute;
-    right: 3rem;
-    bottom: 50%;
+  position: absolute;
+  right: 3rem;
+  bottom: 50%;
 }

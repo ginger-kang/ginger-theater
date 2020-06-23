@@ -1,41 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Route, Link } from "react-router-dom";
-import { AiOutlineUser, AiOutlineSearch} from "react-icons/ai";
-import Home from './containers/Home';
-import SearchMovie from './containers/SearchMovie';
+import { AiOutlineUser, AiOutlineSearch } from "react-icons/ai";
+import Home from "./containers/Home";
+import SearchMovie from "./containers/SearchMovie";
 
-import './components/Navigation.css';
+import "./components/Navigation.css";
 
 function App() {
   const [scroll, setScroll] = useState(false);
 
   const handleScroll = () => {
-      //console.log(window.scrollY);
-      if(window.scrollY < 500) {
-          setScroll(false);
-      } else if (window.scrollY >= 500) {
-          setScroll(true);
-      }
-  }
-  
-  window.addEventListener('scroll', handleScroll);
+    //console.log(window.scrollY);
+    if (window.scrollY < 500) {
+      setScroll(false);
+    } else if (window.scrollY >= 500) {
+      setScroll(true);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
 
   return (
     <>
       <div className={"nav" + (scroll ? "black" : "")}>
-          <Link to='/' className="netcha">
-              <span className="ginger">GINGER</span>
-              <span className="ginger-movie">MOVIE</span>
+        <Link to="/" className="netcha">
+          <span className="ginger">GINGER</span>
+          <span className="ginger-movie">THEATER</span>
+        </Link>
+        <Link to="/" className="home">
+          HOME
+        </Link>
+        <div className="navIcon">
+          <Link to="/search" className="searchIcon">
+            <AiOutlineSearch size={32} />
           </Link>
-          <Link to='/' className="home">HOME</Link>
-          <Link to='/party' className="party">PARTY</Link>
-          <div className='navIcon'>
-            <Link to='/search' className='searchIcon'><AiOutlineSearch size={32}/></Link>
-            <Link to='/login' className='loginIcon'><AiOutlineUser size={32}/></Link>
-          </div>
+          <Link to="/login" className="loginIcon">
+            <AiOutlineUser size={32} />
+          </Link>
+        </div>
       </div>
-      <Route path='/' exact={true} component={Home}/>
-      <Route path='/search' component={SearchMovie}/>
+      <Route path="/" exact={true} component={Home} />
+      <Route path="/search" component={SearchMovie} />
     </>
   );
 }
