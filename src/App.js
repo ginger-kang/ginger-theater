@@ -23,11 +23,11 @@ function App() {
   return (
     <>
       <div className={"nav" + (scroll ? "black" : "")}>
-        <Link to="/" className="netcha">
+        <Link to={process.env.PUBLIC_URL} className="netcha">
           <span className="ginger">GINGER</span>
           <span className="ginger-movie">THEATER</span>
         </Link>
-        <Link to="/" className="home">
+        <Link to={process.env.PUBLIC_URL} className="home">
           HOME
         </Link>
         <div className="navIcon">
