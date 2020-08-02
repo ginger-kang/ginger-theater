@@ -39,7 +39,7 @@ function App() {
           </Link>
         </div>
       </div>
-      <Route path="/" exact={true} component={Home} />
+      <Route path={process.env.PUBLIC_URL} exact={true} component={Home} />
       <Route path="/search" component={SearchMovie} />
     </>
   );
