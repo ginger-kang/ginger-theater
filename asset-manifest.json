@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ginger-theater/static/css/main.90f32d9d.chunk.css",
+    "main.js": "/ginger-theater/static/js/main.103543e0.chunk.js",
+    "main.js.map": "/ginger-theater/static/js/main.103543e0.chunk.js.map",
+    "runtime-main.js": "/ginger-theater/static/js/runtime-main.c24dd759.js",
+    "runtime-main.js.map": "/ginger-theater/static/js/runtime-main.c24dd759.js.map",
+    "static/js/2.caa21772.chunk.js": "/ginger-theater/static/js/2.caa21772.chunk.js",
+    "static/js/2.caa21772.chunk.js.map": "/ginger-theater/static/js/2.caa21772.chunk.js.map",
+    "index.html": "/ginger-theater/index.html",
+    "precache-manifest.1a05cb034e9b0c81b6d7b00029c283bc.js": "/ginger-theater/precache-manifest.1a05cb034e9b0c81b6d7b00029c283bc.js",
+    "service-worker.js": "/ginger-theater/service-worker.js",
+    "static/css/main.90f32d9d.chunk.css.map": "/ginger-theater/static/css/main.90f32d9d.chunk.css.map",
+    "static/js/2.caa21772.chunk.js.LICENSE.txt": "/ginger-theater/static/js/2.caa21772.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c24dd759.js",
+    "static/js/2.caa21772.chunk.js",
+    "static/css/main.90f32d9d.chunk.css",
+    "static/js/main.103543e0.chunk.js"
+  ]
+}
