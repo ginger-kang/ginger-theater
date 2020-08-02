@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ginger-theater/static/css/main.90f32d9d.chunk.css",
-    "main.js": "/ginger-theater/static/js/main.103543e0.chunk.js",
-    "main.js.map": "/ginger-theater/static/js/main.103543e0.chunk.js.map",
+    "main.js": "/ginger-theater/static/js/main.eb6012ad.chunk.js",
+    "main.js.map": "/ginger-theater/static/js/main.eb6012ad.chunk.js.map",
     "runtime-main.js": "/ginger-theater/static/js/runtime-main.c24dd759.js",
     "runtime-main.js.map": "/ginger-theater/static/js/runtime-main.c24dd759.js.map",
     "static/js/2.caa21772.chunk.js": "/ginger-theater/static/js/2.caa21772.chunk.js",
     "static/js/2.caa21772.chunk.js.map": "/ginger-theater/static/js/2.caa21772.chunk.js.map",
     "index.html": "/ginger-theater/index.html",
-    "precache-manifest.1a05cb034e9b0c81b6d7b00029c283bc.js": "/ginger-theater/precache-manifest.1a05cb034e9b0c81b6d7b00029c283bc.js",
+    "precache-manifest.941697304ab42bb16ba60b66ad0f09a3.js": "/ginger-theater/precache-manifest.941697304ab42bb16ba60b66ad0f09a3.js",
     "service-worker.js": "/ginger-theater/service-worker.js",
     "static/css/main.90f32d9d.chunk.css.map": "/ginger-theater/static/css/main.90f32d9d.chunk.css.map",
     "static/js/2.caa21772.chunk.js.LICENSE.txt": "/ginger-theater/static/js/2.caa21772.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c24dd759.js",
     "static/js/2.caa21772.chunk.js",
     "static/css/main.90f32d9d.chunk.css",
-    "static/js/main.103543e0.chunk.js"
+    "static/js/main.eb6012ad.chunk.js"
   ]
 }

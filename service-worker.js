@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ginger-theater/precache-manifest.1a05cb034e9b0c81b6d7b00029c283bc.js"
+  "/ginger-theater/precache-manifest.941697304ab42bb16ba60b66ad0f09a3.js"
 );
 
 self.addEventListener('message', (event) => {
